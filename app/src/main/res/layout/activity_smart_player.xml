@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentRelativeID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmartPlayerActivity">
+
+    <RelativeLayout
+        android:id="@+id/upperID"
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+
+        <ImageView
+            android:id="@+id/logoID"
+            android:layout_width="match_parent"
+            android:layout_height="270dp" />
+
+        <TextView
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_marginTop="7dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textAllCaps="false"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textStyle="italic|bold"
+            android:id="@+id/songNameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/lowerID"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/previousBtn"
+            android:visibility="invisible"
+            android:src="@drawable/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/play_push_Btn"
+            android:visibility="invisible"
+            android:src="@drawable/play"
+            android:layout_toEndOf="@+id/previousBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/next_Btn"
+            android:src="@drawable/next"
+            android:visibility="invisible"
+            android:layout_toEndOf="@+id/previousBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
+        android:text="Voice Enable MODE"
+        android:id="@+id/voiceEnabelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
